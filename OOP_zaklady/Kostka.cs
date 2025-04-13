@@ -27,7 +27,7 @@ public class Kostka
     }
     public Kostka() //dalsi konstruktor, tentokrat bez parametru
     {
-        pocetSten = 8;
+        pocetSten = 6;
         random = new Random(); //vytvoreni instance generatoru nahod. cisel
     }
     ///<summary>
