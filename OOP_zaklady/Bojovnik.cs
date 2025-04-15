@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 
 namespace OOP_zaklady;
 
@@ -35,6 +36,10 @@ public class Bojovnik
     ///</summary>
     private int obrana;
     ///<summary>
+    ///Promenna pro ukladani zprav
+    ///</summary>
+    private string zprava;
+    ///<summary>
     ///Instance hraci kostky
     ///</summary>
     private Kostka kostka;
@@ -61,6 +66,34 @@ public class Bojovnik
     {
         return (zivot > 0); //muzeme rovnou vratit logickou hodnotu vyrazu
     }
+    ///<summary>
+    ///Umoznuje branit se uderu
+    ///</summary> 
+    public void BranSe(int uder)
+    {
+        int zraneni = uder - (obrana + kostka.Hod()); //od uderu protivnika odecteme nasi obranu navysenu o hodnotu jez padne na kostce
+        if (zraneni > 0)
+        {
+            zivot -= zraneni;
+            zprava = String.Format("{0} utrpel zraneni {1} hp", jmeno, zraneni);
+            if (zivot <= 0)
+            {
+                zivot = 0;   //dorovnani zivota na nulu, abychom nenavysovali zivot pri  odrazeni celeho utoku
+            }
+        }
+        else
+            zprava = String.Format("{0} odrazil cely utok", jmeno);
+        NastavZpravu(zprava);
+    }
+    ///<summary>
+    ///Metoda bere jako parametr instanci bojovnika na ktereho utocime a ptom na nem volame metodu BranSe()
+    ///</summary>
+    public void Utoc(Bojovnik souper)
+    {
+        int uder=utok+kostka.Hod();
+        NastavZpravu(String.Format("{0} utoci s uderem {1} hp", jmeno, uder));
+        souper.BranSe(uder);   //na instanci soupere zavola metodu BranSe a ten se bude branit nasemu utoku
+    }
 
     ///<summary>
     ///Vykresleni ukazatele graf. zivotaa
@@ -79,5 +112,13 @@ public class Bojovnik
         //kde znak navic je uvodni znak
         s += "]";
         return s;
+    }
+    private void NastavZpravu(string zprava)
+    {
+        this.zprava = zprava; //nastavi zpravu predanou v parametru do privatni promenne
+    }
+    public string VratPosledniZpravu()
+    {
+        return zprava;    //vrati zpravu ulozenou v privatni promenne
     }
 }
