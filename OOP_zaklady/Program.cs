@@ -11,7 +11,7 @@ public static class Program
         Kostka kostka2 = new Kostka(9);
         Bojovnik bojovnik = new Bojovnik("Zalgoren", 100, 20, 10, kostka1);
 
-        //hod seestistenou kostkou
+        //hod sestistenou kostkou
         Console.WriteLine("Hod sestistennou kostkou: ");
         for (int i = 0; i < 15; i++)
         {
