@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lmoud\\Documents\\CSharp2025\\OOP_zaklady\\OOP_zaklady\\OOP_zaklady.csproj": {}
+    "C:\\Users\\moudr\\Documents\\C#\\OOP_Zaklady\\OOP_zaklady\\OOP_zaklady.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lmoud\\Documents\\CSharp2025\\OOP_zaklady\\OOP_zaklady\\OOP_zaklady.csproj": {
+    "C:\\Users\\moudr\\Documents\\C#\\OOP_Zaklady\\OOP_zaklady\\OOP_zaklady.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lmoud\\Documents\\CSharp2025\\OOP_zaklady\\OOP_zaklady\\OOP_zaklady.csproj",
+        "projectUniqueName": "C:\\Users\\moudr\\Documents\\C#\\OOP_Zaklady\\OOP_zaklady\\OOP_zaklady.csproj",
         "projectName": "OOP_zaklady",
-        "projectPath": "C:\\Users\\lmoud\\Documents\\CSharp2025\\OOP_zaklady\\OOP_zaklady\\OOP_zaklady.csproj",
-        "packagesPath": "C:\\Users\\lmoud\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lmoud\\Documents\\CSharp2025\\OOP_zaklady\\OOP_zaklady\\obj\\",
+        "projectPath": "C:\\Users\\moudr\\Documents\\C#\\OOP_Zaklady\\OOP_zaklady\\OOP_zaklady.csproj",
+        "packagesPath": "C:\\Users\\moudr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\moudr\\Documents\\C#\\OOP_Zaklady\\OOP_zaklady\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lmoud\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\moudr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

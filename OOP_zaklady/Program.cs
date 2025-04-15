@@ -9,6 +9,7 @@ public static class Program
     {
         Kostka kostka1 = new Kostka();
         Kostka kostka2 = new Kostka(9);
+        Bojovnik bojovnik = new Bojovnik("Zalgoren", 100, 20, 10, kostka1);
 
         //hod seestistenou kostkou
         Console.WriteLine("Hod sestistennou kostkou: ");
@@ -23,6 +24,11 @@ public static class Program
         {
             Console.Write(kostka2.Hod() + " ");
         }
+
+        Console.WriteLine("Bojovnik: {0}", bojovnik); //test ToString()
+        Console.WriteLine("Nazivu: {0}", bojovnik.Nazivu());
+        Console.WriteLine("Zivot: {0}", bojovnik.GrafickyZivot());
+
         Console.ReadKey();
 
     }
