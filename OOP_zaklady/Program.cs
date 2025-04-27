@@ -21,12 +21,12 @@ public static class Program
         }
         Console.WriteLine();
         //hod devitistenou kostkou
-        Console.WriteLine("Hod devitistennou kostkou: ");
+        Console.WriteLine("Hod devitistennou kostkou:");
         for (int i = 0; i < 15; i++)
         {
             Console.Write(kostka2.Hod() + " ");
         }
-
+        Console.WriteLine("\n");
        /*  Console.WriteLine("Bojovnik: {0}", bojovnik); //test ToString()
         Console.WriteLine("Nazivu: {0}", bojovnik.Nazivu());
         Console.WriteLine("Zivot: {0}", bojovnik.GrafickyZivot());

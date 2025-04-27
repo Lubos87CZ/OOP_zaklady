@@ -44,7 +44,7 @@ public class Arena
         //puvodni poradi
         Bojovnik b1=bojovnik1;
         Bojovnik b2=bojovnik2;
-        Console.WriteLine("Vitejte v dnesnim zapase. \n Utkaji se: {0} proti {1}\n)",bojovnik1,bojovnik2);
+        Console.WriteLine("Vitejte v dnesnim zapase. \nUtkaji se: {0} proti {1}\n",bojovnik1,bojovnik2);
         bool zacinaBojovnik2=(kostka.Hod()<=(kostka.VratPocetSten()/2));
         //prohozene poradi
         if(zacinaBojovnik2)
